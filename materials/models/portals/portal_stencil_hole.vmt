@@ -1,0 +1,26 @@
+//used in stencil mode to define the viewable area through the portal. There is absolutely no reasonable way around an appearance of alpha testing when using stencil drawing, so don't rely on alpha blending for smooth edges
+"PortalStaticOverlay"
+{
+	"$alphamasktexture" "models/portals/portal_mask_opening" 		//alpha mask for defining the portal's edges
+	"$alphamasktextureframe" "0"
+	"$staticamount" "1"
+	"$nocolorwrite" "0"
+	"Proxies"
+	{
+		"PortalPickAlphaMask" 							//uses CPortalRender::m_fOpenAmount to animate a texture. Switches to idletexture when fully open
+		{
+			"maskTextureVar" "$alphamasktexture"
+			"maskFrameVar" "$alphamasktextureframe"
+			"openingTexture" "models/portals/portal_mask_opening"
+			"idleTexture" "models/portals/portal_mask"
+		}
+
+		"AnimateSpecificTexture" 						//animates a texture like "AnimatedTexture", but *ONLY* if "onlyAnimateOnTexture" is the current texture used by "animatedtexturevar"s variable
+		{
+			"onlyAnimateOnTexture" "models/portals/portal_mask"
+			"animatedtexturevar" "$alphamasktexture"
+			"animatedtextureframenumvar" "$alphamasktextureframe"
+			"animatedtextureframerate" 22
+		}
+	}
+}

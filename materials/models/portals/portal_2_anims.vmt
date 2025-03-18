@@ -1,0 +1,18 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/portals/orange_swirl"
+	"$additive" "1"
+	"$frame" "0"
+	$hdrcolorscale 1.5
+	$alpha 1
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedTextureVar" "$basetexture"
+			"animatedTextureFrameNumVar" "$frame"
+			"animatedTextureFrameRate" "60"
+		}
+	}
+}

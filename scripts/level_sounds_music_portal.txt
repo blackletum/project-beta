@@ -1,0 +1,75 @@
+
+//***************
+// Music
+//***************
+
+"Portal.song1"			// 1m44sec, play in a machine room
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.50000"
+	"pitch"			"100"
+
+	"soundlevel"		"SNDLVL_NONE"
+
+	"wave"			"*#music/portal_ambient1.mp3"
+}
+
+
+
+"Portal.song2"			// 3m06sec, play when game begins & restart in next level.
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.45000"
+	"pitch"			"100"
+
+	"soundlevel"		"SNDLVL_NONE"
+
+	"wave"			"*#music/portal_ambient2.mp3"
+}
+
+"Portal.song3"			// 3m45sec, play in a harder puzzle room
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.45000"
+	"pitch"			"100"
+
+	"soundlevel"		"SNDLVL_NONE"
+
+	"wave"			"*#music/portal_ambient3.mp3"
+}
+
+
+"Portal.song4"			// 3m30sec, conservation of momentum finale
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.55000"
+	"pitch"			"100"
+
+	"soundlevel"		"SNDLVL_NONE"
+
+	"wave"			"*#music/portal_ambient4.mp3"
+}
+
+
+"Portal.song5"			// 4m34sec, more ominous, before/during fire puzzle
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.40000"
+	"pitch"			"100"
+
+	"soundlevel"		"SNDLVL_NONE"
+
+	"wave"			"*#music/portal_ambient5.mp3"
+}
+
+
+"Portal.room9_OFortuna"  	// 52sec, music for firepit puzzle
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.70000"
+	"pitch"			"100"
+
+	"soundlevel"		"SNDLVL_NONE"
+
+	"wave"			"*#music/portal_firepit1.mp3"
+}
